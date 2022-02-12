@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Example tutorial [Scrimba>React](https://scrimba.com/learn/learnreact/welcome-to-an-introduction-to-react-coaaf455789c2a9addc20dd24) projects
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm i`
+
+Install dependency project
 
 ### `npm start`
 

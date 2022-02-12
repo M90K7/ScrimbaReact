@@ -1,0 +1,25 @@
+.Main {
+  color: white;
+}
+
+.title {
+  margin: 57px auto auto 27px;
+  font-weight: bold;
+  font-size: 39.06px;
+}
+
+.items {
+  margin: 46px auto auto 75px;
+  padding: 0;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.items > li {
+  margin-bottom: 10.36px;
+}
+
+.items > li::marker {
+  color: #61dafb;
+  font-size: 1.3rem;
+}
