@@ -1,24 +1,29 @@
-.nav-container {
+.proj1 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 1rem;
   background: #21222a;
+  height: 90px;
+  padding: 0 26px;
 }
 
-.nav-logo {
+.proj1 .nav-logo {
   display: flex;
+  align-items: center;
   color: #61dafb;
   font-weight: bold;
   font-size: 22.2535px;
 }
 
-.nav-logo img {
-  width: 60px;
-  /* height: 24.47px; */
+.proj1 .nav-logo img {
+  height: 30px;
 }
 
-.nav-title {
+.proj1 .nav-logo .--name {
+  margin-left: 6.5px;
+}
+
+.proj1 .nav-title {
   font-weight: 600;
   font-size: 16px;
   color: #deebf8;

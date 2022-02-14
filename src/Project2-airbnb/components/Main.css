@@ -1,0 +1,23 @@
+.proj2 .Main {
+  display: flex;
+  flex-direction: column;
+  font-family: cursive;
+  margin-bottom: 50px;
+}
+.proj2 .Main .--img {
+  margin: 0 auto;
+  max-width: 395.91px;
+  max-height: 232px;
+}
+.proj2 .Main .title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  color: #000000;
+}
+.proj2 .Main .desc {
+  max-width: 320px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #222222;
+}

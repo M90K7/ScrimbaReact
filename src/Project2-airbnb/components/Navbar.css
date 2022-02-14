@@ -1,0 +1,13 @@
+.proj2 .Navbar {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-left: 30px;
+  background: #ffffff;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.proj2 .Navbar .--logo {
+  width: 82px;
+  height: 25px;
+}

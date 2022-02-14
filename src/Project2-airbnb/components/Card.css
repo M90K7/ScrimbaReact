@@ -1,0 +1,18 @@
+.proj2 .Card {
+  width: 175px;
+  font-size: 12px;
+}
+
+.proj2 .Card .Card--image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.proj2 .Card .Card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.proj2 .Card .Card--star {
+  height: 14px;
+}
