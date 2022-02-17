@@ -1,3 +1,10 @@
 .proj2 .container {
   padding: 36px;
 }
+
+.proj2 .cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
