@@ -1,0 +1,68 @@
+.proj3.App {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+  justify-content: flex-start;
+  margin: 0 auto;
+  background-color: #e1ffd480;
+}
+
+.proj3.App .App--header {
+  height: 50px;
+  padding: 20px;
+  background: lightgray;
+  padding: 10px;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.proj3 .form--input {
+  width: 100%;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  height: 40px;
+  text-indent: 20px;
+  margin: 0;
+}
+
+.proj3 .form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.proj3 .form--ok {
+  border-radius: 20px;
+  height: 40px;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.proj3 .meme {
+  position: relative;
+}
+.proj3 .meme img {
+  height: 100%;
+  object-fit: none;
+  min-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.proj3 .meme--top,
+.proj3 .meme--bottom {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 0 yellow;
+}
+
+.proj3 .meme--top {
+  top: 15px;
+}
+
+.proj3 .meme--bottom {
+  bottom: 15px;
+}
