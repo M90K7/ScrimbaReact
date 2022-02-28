@@ -11,8 +11,22 @@ export default function App() {
   const [meme, setMeme] = React.useState({
     topText: "",
     bottomText: "",
-    image: memeData.data.memes[0].url,
+    image: "",
   });
+
+  const [memes, setMemes] = React.useState([]);
+
+  React.useEffect(() => {
+    (async () => {
+      const response = await fetch("https://api.imgflip.com/get_memes");
+      const data = await response.json();
+      setMemes(data.data.memes);
+    })();
+  }, []);
+
+  React.useEffect(() => {
+    memes.length && updateImage();
+  }, [memes]);
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -24,10 +38,10 @@ export default function App() {
   }
 
   function updateImage() {
-    const randomIndex = Math.floor(Math.random() * memeData.data.memes.length);
+    const randomIndex = Math.floor(Math.random() * memes.length);
     setMeme(prevState => ({
       ...prevState,
-      image: memeData.data.memes[randomIndex].url
+      image: memes[randomIndex].url
     }));
   }
 
@@ -49,11 +63,13 @@ export default function App() {
 
         <button className="form--ok" onClick={updateImage}>Change Image</button>
       </div>
-      <div className="meme">
-        <img src={meme.image} alt="meme" />
-        <h1 className="meme--top">{meme.topText}</h1>
-        <h1 className="meme--bottom">{meme.bottomText}</h1>
-      </div>
+      {
+        meme.image && <div className="meme">
+          <img src={meme.image} alt="meme" />
+          <h1 className="meme--top">{meme.topText}</h1>
+          <h1 className="meme--bottom">{meme.bottomText}</h1>
+        </div>
+      }
     </div>
   );
 }
