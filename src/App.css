@@ -8,6 +8,26 @@ body {
   height: 100%;
 }
 
+.App nav a {
+  color: rgb(19, 39, 12);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.App nav a:visited {
+  all: invert;
+}
+.App nav a:hover {
+  color: rgb(129, 162, 255);
+}
+.App nav a .active {
+  color: rgb(55, 156, 106);
+}
+
+
 #root {
   height: 100%;
 }
